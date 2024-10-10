@@ -4,8 +4,12 @@ import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 const SideBar = () => {
     return (
         <div className='shadow-2xl w-[100%] h-[100%] bg-white rounded-xl py-2 px-5'>
-            <div className='w-[100%]'>
-                <img src={Images} alt="" />
+            <div className='flex items-center flex-col'>
+                <div className="avatar">
+                    <div className="w-24 rounded-full">
+                        <img src={Images} />
+                    </div>
+                </div>
             </div>
             <div className='text-center my-4'>
                 <h2 className='text-black text-2xl font-semibold'>Hi I'M <span className='text-green-500'>Developer</span></h2>
@@ -18,16 +22,16 @@ const SideBar = () => {
                 <div className='flex items-center gap-3 justify-center my-4'>
                     <button className='btn btn-success text-white'><FaFacebook /></button>
                     <button className='btn btn-success text-white'><FaLinkedin /></button>
-                    <button className='btn btn-success text-white'><FaGithub/></button>
+                    <button className='btn btn-success text-white'><FaGithub /></button>
                 </div>
-              <div className='flex flex-col items-center'>
-              
+                <div className='flex flex-col items-center'>
+
                     <button className='bg-green-500 my-2  py-3 px-10 text-white rounded-2xl'>Hire Me</button>
-             
-              
+
+
                     <button className='bg-black  py-3 px-7 text-white rounded-2xl'>Download Cv</button>
-               
-              </div>
+
+                </div>
             </div>
         </div>
     );
