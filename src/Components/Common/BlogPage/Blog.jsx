@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Blog = () => {
     return (
 <section className='mt-6'>
-<div className='flex items-center gap-3 justify-center'>
+<div className='flex items-center gap-3 justify-center lg:flex-row flex-col'>
         <div className="card bg-green-400 px-8 shadow-xl">
             <div className="card-body">
                 <p>Visit Our Blog</p>
